@@ -7,7 +7,7 @@ import { Mapa } from './mapa/mapa';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, Mapa, NgIf],
+  imports: [Menu, Mapa, NgIf],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
