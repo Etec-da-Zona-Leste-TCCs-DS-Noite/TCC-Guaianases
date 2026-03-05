@@ -17,9 +17,16 @@
 
 <body>
 
+    <input type="text" [(ngModel)]="searchAddress" placeholder="Pesquisar endereço">
+
+    <button (click)="searchLocation()">Buscar</button>
+
+    <div id="map" style="height: 500px;"></div>
+
     <main>
         <div id="map"></div>
     </main>
 
 </body>
+
 </html>
