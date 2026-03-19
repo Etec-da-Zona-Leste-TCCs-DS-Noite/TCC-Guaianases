@@ -3,17 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { NgIf } from '@angular/common'; 
 import { FormsModule } from '@angular/forms';
 import { isPlatformBrowser } from '@angular/common';
-import { Menu } from './menu/menu'
+import { Menu } from './menu/menu';
 import { Mapa } from './mapa/mapa';
+import { Home } from './home/home';
 import { HttpClientModule } from '@angular/common/http';
-
-imports: [
-  HttpClientModule
-]
 
 @Component({
   selector: 'app-root',
-  imports: [Menu, Mapa, NgIf],
+  imports: [Menu, Mapa, Home, NgIf, HttpClientModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

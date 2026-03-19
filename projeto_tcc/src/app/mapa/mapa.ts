@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   selector: 'app-mapa',
   templateUrl: './mapa.html'
 })
-export class MapComponent implements OnInit {
+export class Mapa implements OnInit {
 
   map!: L.Map;
   searchAddress: string = '';
