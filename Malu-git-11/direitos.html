@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="./src/CSS/saude.css">
+    <title>Direitos e Assistência</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="./assest/logo.png" alt="Logo do site" width="200px" height="60px"></h1>
+
+        <form>
+            <input type="search" id="pesquisa" placeholder="Pesquisar...">
+        </form>
+
+        <div class="menu-container">
+
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="menu" id="menu">
+
+                <a href="index.html"><button>Home</button></a>
+                <div class="submenu-container">
+                    <button id="btnCategorias">Categorias</button>
+
+                    <div class="submenu" id="submenuCategorias">
+                        <a href="saude.html">Saúde</a>
+                        <a href="cultura.html">Cultura</a>
+                        <a href="direitos.html">Direitos</a>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <br>
+    <h1>Direitos e Assistência em Guaianases</h1>
+    <hr>
+
+    <h3 class="categoria">Trabalho</h3>
+    <ul class="lista-saude">
+
+        <li>
+            <h2>CATE Guaianases</h2>
+            <p>Hipólito de Camargo, 479 - Vila Lourdes</p>
+            <span class="horario">🕐 Segunda a sexta, das 08:00 às 17:00</span>
+            <div class="descricao">
+                Centro que ajuda na busca por emprego.
+                Serviços: vagas de trabalho, cursos, orientação profissional.
+
+
+            </div>
+        </li>
+
+    </ul>
+
+    <h3 class="categoria">Assistência Social</h3>
+    <ul class="lista-saude">
+
+        <li>
+            <h2>CRAS Guaianases</h2>
+            <p>Rua Clarínia, 19</p>
+            <span class="horario">📞 (11) 2363-9593 / 2363-9594</span>
+            <div class="descricao">
+                Atende famílias em situação de vulnerabilidade.
+                Serviços: cadastro em programas sociais, apoio familiar, orientação.
+
+            </div>
+        </li>
+
+        <li>
+            <h2>CREAS Guaianases</h2>
+            <p>Rua Nabuco de Abreu, 06</p>
+            <span class="horario">📞 (11) 2554-7115</span>
+            <div class="descricao">
+                Atendimento para casos mais graves de vulnerabilidade social.
+                Serviços: apoio a vítimas de violência, acompanhamento social.
+
+            </div>
+        </li>
+
+    </ul>
+
+    <h3 class="categoria">Proteção dos Direitos</h3>
+    <ul class="lista-saude">
+
+        <li>
+            <h2>Ministério Público de São Paulo</h2>
+            <p>Rua Riachuelo, 115 - 1º andar</p>
+            <span class="horario">📞 (11) 3119-9090 (Saúde Pública)</span>
+            <div class="descricao">
+                Órgão que defende os direitos da população.
+                Serviços: denúncias, fiscalização, defesa de direitos.
+
+            </div>
+        </li>
+
+    </ul>
+
+    <h3 class="categoria">Conselho Tutelar</h3>
+    <ul class="lista-saude">
+
+        <li>
+            <h2>Conselho Tutelar de Guaianases</h2>
+            <p>Rua Centralina, 254</p>
+            <span class="horario">📞 (11) 2392-9530</span>
+            <div class="descricao">
+                Protege os direitos de crianças e adolescentes.
+                Serviços: atendimento de denúncias, orientação, encaminhamentos.
+
+            </div>
+        </li>
+
+        <li>
+            <h2>Conselho Tutelar de Lajeado</h2>
+            <p>Rua General Otelo Franco, 08/10</p>
+            <span class="horario">📞 (11) 2392-8720</span>
+            <div class="descricao">
+                Atua na proteção infantil na região.
+                Serviços: defesa dos direitos, apoio a famílias, intervenções legais.
+
+            </div>
+        </li>
+
+    </ul>
+
+    <br>
+
+
+    <h2>Mapa dos Serviços</h2>
+
+    <button onclick="findMe()">Minha Localização</button>
+    <button onclick="irParaPrefeitura()">Ponto Referencial</button>
+
+    <div id="map" style="height: 500px;"></div>
+
+    <script src="./src/js-maps/mapaDireitos.js"></script>
+
+
+</body>
+
+</html>
